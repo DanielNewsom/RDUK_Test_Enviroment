@@ -2,39 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HP EliteBook 1040 G8 Viewer</title>
+  <title>HP EliteBook 1040 G8 (Optimized)</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
     body {
       margin: 0;
-      background: #f9f9f9;
+      background: #f0f0f0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: sans-serif;
     }
     model-viewer {
       width: 100%;
       max-width: 900px;
       height: 600px;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
 <body>
 
   <model-viewer
-    src="https://cdn.jsdelivr.net/gh/curated-models/hp@main/HP1040G8Render.glb"
+    src="HP1040G8Render-optimized.glb"
     alt="HP EliteBook 1040 G8"
     camera-controls
-    auto-rotate
     environment-image="neutral"
-    exposure="1"
-    shadow-intensity="1"
-    ar>
+    interaction-prompt="none"
+    loading="lazy"
+    reveal="interaction">
   </model-viewer>
 
 </body>
